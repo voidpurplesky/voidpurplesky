@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script> 
+$(function(){
+
+// jQuery methods go here...
+    $("#button1").click(function(){
+        console.log(this); // <button id="button1">button</button>
+        $(".c11").first().css("background-color", "blue");
+    });
+});
+</script>
+<style> 
+
+</style>
+</head>
+<body>
+<div class="c1">
+    c1
+    <button id="button1">button</button>
+    <div class="c11">
+        c11
+    </div>
+    <div class="c11">
+        c11
+    </div>
+</div>
+</body>
+</html>
